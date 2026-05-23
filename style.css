@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-kiri {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-kanan {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home {
+    background-color: pink;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.home-kiri {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+}
+
+.home-kanan {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.foto {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: white;
+    padding: 15px;
+}
+
+/* Mengatur gaya teks info kontak */
+.kontak-info {
+    margin: 15px 0 25px 0; /* Memberi jarak atas dan bawah */
+    font-size: 16px;
+}
+
+.kontak-info p {
+    margin: 8px 0; /* Jarak antar baris email dan ig */
+}
+
+.kontak-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kontak-info a:hover {
+    text-decoration: underline; /* Muncul garis bawah saat kursor mendekat */
+}
+
+/* Mengubah Link Contact menjadi Tombol yang Keren */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: pink; /* Warna teks tombol kontras dengan background */
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px; /* Membuat tombol lonjong estetik */
+    transition: all 0.3s ease; /* Efek halus saat di-hover */
+    width: fit-content;
+}
+
+/* Efek interaktif saat tombol disentuh kursor */
+.btn:hover {
+    background-color: #ffe4e1; /* Warna pink sangat muda */
+    transform: translateY(-3px); /* Tombol sedikit terangkat ke atas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
